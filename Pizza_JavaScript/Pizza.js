@@ -3,10 +3,10 @@ function getReceipt() {
     //function to function, growing line by line into a full receipt
     var text1 = 0;
     var sizeTotal = 0;
-    var sizeArray = document.getElementsByClassName("size");
+    var sizeArray = document.getElementsByClassName("Size");
     for (var i = 0; i < sizeArray.length; i++) {
         if (sizeArray[i].checked) {
-            var selectedSize = sizeArray[i].ariaValueMax;
+            var selectedSize = sizeArray[i].value;
             text1 = text1+selectedSize+"<br>"
         }
     }
